@@ -414,15 +414,16 @@ body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--dark);
   <div class="form-r">
     <div id="mForm">
       <p class="lbl" style="margin-bottom:1.5rem" data-i="fm_l">Soumettez votre projet</p>
+      <form id="contactForm" action="https://formspree.io/f/mlgpbden" method="POST" enctype="multipart/form-data">
       <div class="fr2">
-        <div class="fg"><label class="fl" data-i="f_fn">Prénom</label><input class="fi" id="f-prenom" type="text" placeholder="Marie"/></div>
-        <div class="fg"><label class="fl" data-i="f_ln">Nom</label><input class="fi" id="f-nom" type="text" placeholder="Dupont"/></div>
+        <div class="fg"><label class="fl" data-i="f_fn">Prénom</label><input class="fi" id="f-prenom" name="prenom" type="text" placeholder="Marie"/></div>
+        <div class="fg"><label class="fl" data-i="f_ln">Nom</label><input class="fi" id="f-nom" name="nom" type="text" placeholder="Dupont"/></div>
       </div>
-      <div class="fg"><label class="fl" data-i="f_em">Email</label><input class="fi" id="f-email" type="email" placeholder="marie@entreprise.be"/></div>
+      <div class="fg"><label class="fl" data-i="f_em">Email</label><input class="fi" id="f-email" name="email" type="email" placeholder="marie@entreprise.be"/></div>
       <div class="fr2">
-        <div class="fg"><label class="fl" data-i="f_ph">Téléphone</label><input class="fi" id="f-tel" type="tel" placeholder="+32 ..."/></div>
+        <div class="fg"><label class="fl" data-i="f_ph">Téléphone</label><input class="fi" id="f-tel" name="telephone" type="tel" placeholder="+32 ..."/></div>
         <div class="fg"><label class="fl" data-i="f_cl">Vous êtes</label>
-          <select class="fi" id="f-client">
+          <select class="fi" id="f-client" name="type_client">
             <option data-i="f_cs">Sélectionner...</option>
             <option data-i="f_c1">Particulier</option>
             <option data-i="f_c2">Entreprise / Professionnel</option>
@@ -433,7 +434,7 @@ body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--dark);
       </div>
       <div class="fr2">
         <div class="fg"><label class="fl" data-i="f_ty">Type de projet</label>
-          <select class="fi" id="f-type">
+          <select class="fi" id="f-type" name="type_projet">
             <option data-i="f_s0">Sélectionner...</option>
             <option data-i="f_t1">Résidentiel</option>
             <option data-i="f_t2">Commercial</option>
@@ -444,7 +445,7 @@ body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--dark);
           </select>
         </div>
         <div class="fg"><label class="fl" data-i="f_su">Surface(s)</label>
-          <select class="fi" id="f-surface">
+          <select class="fi" id="f-surface" name="surface">
             <option data-i="f_ss">Sélectionner...</option>
             <option data-i="fs1">Murs</option>
             <option data-i="fs2">Mobilier / Agencement</option>
@@ -455,9 +456,9 @@ body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--dark);
           </select>
         </div>
       </div>
-      <div class="fg"><label class="fl" data-i="f_de">Décrivez votre vision</label><textarea class="fi" id="f-desc" rows="3" placeholder="Matériaux, style, couleurs souhaités..." style="resize:vertical"></textarea></div>
+      <div class="fg"><label class="fl" data-i="f_de">Décrivez votre vision</label><textarea class="fi" id="f-desc" name="description" rows="3" placeholder="Matériaux, style, couleurs souhaités..." style="resize:vertical"></textarea></div>
       <div class="fg"><label class="fl" data-i="f_rq">Je souhaite</label>
-        <select class="fi" id="f-requete">
+        <select class="fi" id="f-requete" name="demande">
           <option value="simulation" data-i="fr1">Simulation visuelle (gratuite, 24h)</option>
           <option value="proforma" data-i="fr2">Devis proforma (48h)</option>
           <option value="both" data-i="fr3">Les deux — simulation + devis</option>
@@ -468,9 +469,9 @@ body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--dark);
         <div id="fup-label" data-i="f_up">Déposez vos photos ici — ou cliquez pour importer</div>
         <div style="font-size:.56rem;color:var(--stone);margin-top:.2rem">JPG · PNG · PDF · Max 20MB</div>
       </div>
-      <input type="file" id="f-fup" multiple accept="image/*,.pdf" style="display:none" onchange="fileLabel()"/>
+      <input type="file" id="f-fup" name="photos" multiple accept="image/*,.pdf" style="display:none" onchange="fileLabel()"/>
       <div class="ferr" id="f-err">Veuillez remplir les champs obligatoires : prénom, nom et email.</div>
-      <button class="fsub" onclick="submitForm(event)"><span data-i="f_sb">Envoyer ma demande de projet</span><span>→</span></button>
+      <button class="fsub" type="button" onclick="submitForm(event)"><span data-i="f_sb">Envoyer ma demande de projet</span><span>→</span></button>
     </div>
     <div class="fsucc" id="fsucc">
       <div class="fsucc-i">✓</div>
@@ -561,26 +562,21 @@ function fileLabel(){
   var f=document.getElementById('f-fup').files;
   if(f.length>0)document.getElementById('fup-label').textContent=f.length+' fichier(s) sélectionné(s)';
 }
-function submitForm(e){
-  e.preventDefault();
+function validateForm(e){
   var p=document.getElementById('f-prenom').value.trim();
   var n=document.getElementById('f-nom').value.trim();
   var em=document.getElementById('f-email').value.trim();
   var err=document.getElementById('f-err');
-  if(!p||!n||!em){err.style.display='block';return;}
+  if(!p||!n||!em){e.preventDefault();err.style.display='block';return false;}
   err.style.display='none';
-  document.getElementById('mForm').style.display='none';
-  document.getElementById('fsucc').style.display='block';
-  var tel=document.getElementById('f-tel').value;
-  var cl=document.getElementById('f-client').value;
-  var type=document.getElementById('f-type').value;
-  var surf=document.getElementById('f-surface').value;
-  var desc=document.getElementById('f-desc').value;
-  var req=document.getElementById('f-requete').value;
-  var body='Nouvelle demande - Art Cover Project\n\nPrénom: '+p+'\nNom: '+n+'\nEmail: '+em+'\nTéléphone: '+tel+'\nClient: '+cl+'\nType: '+type+'\nSurface: '+surf+'\nDemande: '+req+'\n\nDescription:\n'+desc;
-  var a=document.createElement('a');
-  a.href='mailto:info@art-cover-project.com?subject=Nouvelle demande ACP - '+p+' '+n+'&body='+encodeURIComponent(body);
-  a.click();
+  // Afficher le message de succès après envoi
+  document.getElementById('contactForm').addEventListener('submit', function(){
+    setTimeout(function(){
+      document.getElementById('mForm').style.display='none';
+      document.getElementById('fsucc').style.display='block';
+    }, 500);
+  });
+  return true;
 }
 // COMPTEURS
 var done=false;
