@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Art Cover Project — Revêtements Architecturaux Premium</title>
+<link rel="canonical" href="https://www.art-cover-project.com/"/>
+<meta property="og:title" content="Art Cover Project — Revêtements Architecturaux Premium"/>
+<meta property="og:description" content="Revêtements architecturaux premium Coverstyl. Murs, mobilier, cuisines, portes. Simulation visuelle gratuite en 24h. Belgique."/>
+<meta property="og:url" content="https://www.art-cover-project.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://www.art-cover-project.com/hero.jpg"/>
+<meta name="theme-color" content="#B48F52"/>
+<meta name="description" content="Revêtements architecturaux premium Coverstyl. Murs, mobilier, cuisines, portes. Simulation visuelle gratuite en 24h. Belgique."/>
+<link rel="preload" href="hero.jpg" as="image" fetchpriority="high"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://cdn.trustindex.io"/>
+<link rel="preconnect" href="https://images.unsplash.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/></noscript>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#B48F52;--gold-l:#C9A96E;--gold-d:#8A6A32;
+  --cream:#F9F6F0;--white:#FFFFFF;--light:#F2EDE6;--border:#E5DDD4;
+  --dark:#1A1A1C;--mid:#4A4A4C;--stone:#8A8680;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--dark);overflow-x:hidden}
+
+/* LANGUE */
+.lb-bar{background:var(--dark);display:flex;justify-content:flex-end;align-items:center;padding:.4rem 3rem;gap:.3rem}
+.lb{background:none;border:none;cursor:pointer;font-family:'Raleway',sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);padding:.25rem .65rem;border-bottom:1px solid transparent;transition:all .2s}
+.lb.on{color:var(--gold);border-bottom-color:var(--gold)}
+.lsep{color:#444;font-size:.6rem}
+
+/* NAV */
+.anav{background:var(--white);display:flex;align-items:center;justify-content:space-between;padding:.9rem 3rem;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,.05)}
+.nav-logo{display:flex;align-items:center;gap:.9rem;text-decoration:none}
+.nav-logo img{height:46px;border-radius:8px;object-fit:contain}
+.logo-name{font-family:'Cinzel',serif;font-size:.82rem;font-weight:700;letter-spacing:.15em;color:var(--gold);display:block}
+.logo-sl{font-size:.38rem;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);font-style:italic}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-ctas{display:flex;gap:.6rem}
+.btn-o{font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;padding:.52rem 1rem;text-decoration:none;border:1.5px solid var(--gold);color:var(--gold);background:transparent;transition:all .2s;white-space:nowrap;cursor:pointer;font-family:'Raleway',sans-serif;font-weight:500}
+.btn-o:hover{background:var(--gold);color:var(--white)}
+.btn-f{font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;padding:.52rem 1rem;text-decoration:none;border:1.5px solid var(--gold);color:var(--white);background:var(--gold);transition:all .2s;white-space:nowrap;font-family:'Raleway',sans-serif;font-weight:600}
+.btn-f:hover{background:var(--gold-l)}
+
+/* HERO */
+.hero{min-height:88vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('hero.jpg');background-size:cover;background-position:center}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,6,2,.78) 0%,rgba(8,6,2,.5) 60%,rgba(8,6,2,.3) 100%)}
+.hero-in{position:relative;z-index:2;text-align:center;padding:4rem 2rem;max-width:860px;margin:0 auto}
+.hero-ey{display:inline-flex;align-items:center;gap:.8rem;font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;background:rgba(180,143,82,.1);border:1px solid rgba(180,143,82,.3);padding:.45rem 1.2rem}
+.hero-title{font-family:'Cinzel',serif;font-size:clamp(2.4rem,5.5vw,5.2rem);font-weight:600;line-height:1.06;color:var(--white);margin-bottom:.7rem}
+.hero-title .g{color:var(--gold)}
+.hero-sl{font-style:italic;font-weight:300;font-size:clamp(.9rem,1.5vw,1.1rem);color:rgba(255,255,255,.55);margin-bottom:1.6rem;letter-spacing:.08em}
+.hero-desc{font-size:.88rem;line-height:1.95;font-weight:300;color:rgba(255,255,255,.72);max-width:580px;margin:0 auto 2.8rem}
+.hero-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.hbtn{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;font-family:'Raleway',sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;padding:.85rem 2rem;transition:all .25s;font-weight:600}
+.hbtn.gd{background:var(--gold);color:var(--white);border:1.5px solid var(--gold)}
+.hbtn.gd:hover{background:var(--gold-l);border-color:var(--gold-l)}
+.hbtn.ou{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.45)}
+.hbtn.ou:hover{border-color:var(--gold);color:var(--gold)}
+
+/* STATS */
+.stats{background:var(--white);border-bottom:1px solid var(--border)}
+.stats-g{display:grid;grid-template-columns:repeat(5,1fr)}
+.sc{padding:2.2rem 1.5rem;text-align:center;border-right:1px solid var(--border);position:relative;transition:background .3s;cursor:default}
+.sc:last-child{border-right:none}
+.sc:hover{background:var(--light)}
+.sc::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:width .6s}
+.sc:hover::after{width:100%}
+.sc-num{font-family:'Cinzel',serif;font-size:clamp(1.6rem,2.5vw,2.5rem);font-weight:700;color:var(--gold);line-height:1;margin-bottom:.4rem;display:flex;align-items:baseline;justify-content:center;gap:.1rem}
+.sc-sx{font-size:.45em;font-weight:400;color:var(--stone)}
+.sc-lb{font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);line-height:1.65}
+
+/* SECTIONS */
+.sec{padding:6rem 3rem}
+.sw{background:var(--white)}
+.sl{background:var(--light)}
+.lbl{display:inline-flex;align-items:center;gap:.7rem;font-size:.54rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.lbl::before{content:'◆';font-size:.36rem}
+.h2{font-family:'Cinzel',serif;font-size:clamp(1.6rem,2.5vw,2.8rem);font-weight:600;line-height:1.1;color:var(--dark)}
+.h2 em{font-style:italic;color:var(--gold);font-family:'Raleway',sans-serif;font-weight:300;font-size:.88em}
+.lead{font-size:.86rem;line-height:1.95;font-weight:300;color:var(--stone)}
+.sec-top{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:3.5rem}
+
+/* SERVICES — icônes SVG professionnelles */
+.svc-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.svc-c{background:var(--cream);padding:2.5rem 2rem;border:1px solid var(--border);position:relative;overflow:hidden;transition:all .3s}
+.svc-c:hover{border-color:var(--gold);box-shadow:0 8px 32px rgba(180,143,82,.1);transform:translateY(-3px);background:var(--white)}
+.svc-ico{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--border);margin-bottom:1.4rem;transition:all .3s;color:var(--gold);background:var(--white)}
+.svc-c:hover .svc-ico{border-color:var(--gold);background:rgba(180,143,82,.06)}
+.svc-ico svg{width:22px;height:22px}
+.svc-n{font-size:.48rem;font-style:normal;color:var(--gold-d);margin-bottom:.5rem;letter-spacing:.15em;font-weight:600;text-transform:uppercase}
+.svc-nm{font-family:'Cinzel',serif;font-size:.9rem;font-weight:600;color:var(--dark);margin-bottom:.7rem}
+.svc-d{font-size:.78rem;line-height:1.85;font-weight:300;color:var(--stone)}
+.svc-bar{position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:width .5s}
+.svc-c:hover .svc-bar{width:100%}
+
+/* RÉALISATIONS */
+.rf-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.rf-c{overflow:hidden;border:1px solid var(--border);transition:all .35s;background:var(--white)}
+.rf-c:hover{box-shadow:0 12px 40px rgba(0,0,0,.1);transform:translateY(-4px);border-color:var(--gold)}
+.rf-th{aspect-ratio:4/3;overflow:hidden;position:relative}
+.rf-img{width:100%;height:100%;object-fit:cover;transition:transform .6s;display:block}
+.rf-c:hover .rf-img{transform:scale(1.06)}
+.rf-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,8,4,.55),transparent 55%);opacity:0;transition:opacity .3s}
+.rf-c:hover .rf-ov{opacity:1}
+.rf-ot{position:absolute;bottom:1rem;left:1rem;right:1rem;font-style:italic;font-size:.72rem;color:#fff;opacity:0;transform:translateY(6px);transition:all .3s}
+.rf-c:hover .rf-ot{opacity:1;transform:translateY(0)}
+.rf-bd{padding:1.2rem 1.2rem 1.4rem}
+.rf-cat{display:inline-block;font-size:.48rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(180,143,82,.3);padding:.16rem .55rem;margin-bottom:.5rem}
+.rf-nm{font-family:'Cinzel',serif;font-size:.85rem;color:var(--dark);margin-bottom:.25rem}
+.rf-mt{font-size:.6rem;color:var(--stone);font-style:italic}
+
+/* MATÉRIAUX */
+.cov-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:2rem}
+.cov-c{border:1px solid var(--border);background:var(--white);overflow:hidden;transition:all .3s}
+.cov-c:hover{border-color:var(--gold);box-shadow:0 6px 24px rgba(180,143,82,.12);transform:translateY(-2px)}
+.cov-img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s;display:block}
+.cov-c:hover .cov-img{transform:scale(1.04)}
+.cov-bd{padding:1rem 1rem .9rem}
+.cov-nm{font-family:'Cinzel',serif;font-size:.82rem;color:var(--dark);margin-bottom:.25rem}
+.cov-rf{font-size:.58rem;color:var(--stone);letter-spacing:.04em}
+.cov-spec{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:1.5rem}
+.cov-sp{border:1.5px solid var(--gold);padding:1.3rem 1rem;text-align:center}
+.cov-sp-t{font-family:'Cinzel',serif;font-size:.75rem;color:var(--gold);font-weight:600;margin-bottom:.35rem}
+.cov-sp-d{font-size:.58rem;color:var(--stone);line-height:1.55}
+
+/* EXPERTISE */
+.diff-g{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3.5rem}
+.diff-c{background:var(--white);padding:2.8rem 2.5rem;border:1px solid var(--border);position:relative;overflow:hidden;transition:all .3s}
+.diff-c:hover{border-color:var(--gold);box-shadow:0 8px 32px rgba(180,143,82,.08)}
+.diff-ico{width:48px;height:48px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--border);margin-bottom:1.3rem;color:var(--gold)}
+.diff-ico svg{width:22px;height:22px}
+.diff-t{font-family:'Cinzel',serif;font-size:1rem;font-weight:600;color:var(--gold);margin-bottom:.8rem}
+.diff-d{font-size:.8rem;line-height:1.88;font-weight:300;color:var(--stone)}
+.diff-bg{position:absolute;bottom:-1.5rem;right:-.5rem;font-family:'Cinzel',serif;font-size:7rem;font-weight:700;color:rgba(180,143,82,.04);pointer-events:none;line-height:1}
+
+/* TÉMOIGNAGES */
+.ts-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:3rem}
+.ts-c{background:var(--white);padding:2.2rem 2rem 2rem;border:1px solid var(--border);transition:all .3s}
+.ts-c:hover{border-color:var(--gold);box-shadow:0 6px 24px rgba(180,143,82,.08)}
+.ts-stars{display:flex;gap:.18rem;margin-bottom:.9rem}
+.ts-star{color:var(--gold);font-size:.85rem;line-height:1}
+.ts-tx{font-size:.82rem;line-height:1.85;font-weight:300;font-style:italic;color:var(--mid);margin-bottom:1.5rem}
+.ts-per{display:flex;align-items:center;gap:.9rem;border-top:1px solid var(--border);padding-top:1rem}
+.ts-av{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:top center;border:2px solid var(--gold);flex-shrink:0}
+.ts-nm{font-size:.76rem;font-weight:600;color:var(--dark);margin-bottom:.1rem}
+.ts-rl{font-size:.58rem;letter-spacing:.05em;color:var(--stone)}
+.ts-badge{display:inline-block;margin-top:.2rem;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;padding:.12rem .45rem;border:1px solid rgba(180,143,82,.3);color:var(--gold);background:rgba(180,143,82,.05)}
+.google-widget{background:var(--white);border:1px solid var(--border);padding:2.5rem;text-align:center}
+.gw-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(180,143,82,.3);padding-bottom:.15rem;margin-top:1.5rem}
+.gw-link:hover{border-bottom-color:var(--gold)}
+
+/* FORMULAIRE */
+.form-s{display:grid;grid-template-columns:1fr 1fr}
+.form-l{background:linear-gradient(145deg,#7A5C28 0%,#B48F52 55%,#C9A96E 100%);padding:5.5rem 3.5rem;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.form-l::before{content:'ACP';position:absolute;right:-2rem;bottom:-2rem;font-family:'Cinzel',serif;font-size:14rem;font-weight:700;color:rgba(255,255,255,.05);line-height:1;pointer-events:none}
+.form-r{background:var(--white);padding:5rem 3.5rem;border-top:3px solid var(--gold)}
+.fl-badge{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);padding:.42rem 1rem;margin-bottom:2rem;width:fit-content}
+.fl-dot{width:5px;height:5px;background:#fff;border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.fl-t{font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.fl-h2{font-family:'Cinzel',serif;font-size:1.75rem;font-weight:600;line-height:1.2;color:#fff;margin-bottom:1rem}
+.fl-h2 em{font-style:italic;font-family:'Raleway',sans-serif;font-weight:300;color:rgba(255,255,255,.82)}
+.fl-d{font-size:.82rem;line-height:1.9;font-weight:300;color:rgba(255,255,255,.72);margin-bottom:2.5rem}
+.fl-items{display:flex;flex-direction:column;gap:1rem}
+.fl-item{display:flex;align-items:center;gap:.9rem}
+.fl-icon{width:36px;height:36px;border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff}
+.fl-icon svg{width:16px;height:16px}
+.fl-item-t{font-size:.74rem;font-weight:600;color:#fff;margin-bottom:.1rem}
+.fl-item-s{font-size:.62rem;font-weight:300;color:rgba(255,255,255,.65)}
+.fl-item-s a{color:rgba(255,255,255,.85);text-decoration:none}
+
+/* Form elements */
+.fm-lbl{display:inline-flex;align-items:center;gap:.6rem;font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.fm-lbl::before{content:'◆';font-size:.32rem}
+.fl-label{font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);margin-bottom:.38rem;display:block;font-weight:600}
+.fl-input{width:100%;background:var(--cream);border:1px solid var(--border);color:var(--dark);padding:.72rem .85rem;font-family:'Raleway',sans-serif;font-size:.82rem;font-weight:300;outline:none;transition:border-color .2s;-webkit-appearance:none;border-radius:0}
+.fl-input::placeholder{color:var(--stone)}
+.fl-input:focus{border-color:var(--gold);background:var(--white)}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{margin-bottom:.9rem}
+.fup-area{border:1.5px dashed var(--border);padding:1.2rem;text-align:center;cursor:pointer;color:var(--stone);font-size:.74rem;font-weight:300;margin-bottom:.9rem;transition:border-color .2s;background:var(--cream)}
+.fup-area:hover{border-color:var(--gold);background:var(--white)}
+.fup-icon{margin:0 auto .5rem;display:block;color:var(--stone)}
+.fsub{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;background:var(--gold);border:none;color:var(--white);font-family:'Raleway',sans-serif;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .25s;font-weight:600;margin-top:.5rem}
+.fsub:hover:not(:disabled){background:var(--gold-l)}
+.fsub:disabled{opacity:.65;cursor:not-allowed}
+.fsucc{display:none;text-align:center;padding:5rem 2rem}
+.fsucc-icon{width:60px;height:60px;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 1.4rem;color:var(--gold)}
+.fsucc-icon svg{width:28px;height:28px}
+.fsucc-t{font-family:'Cinzel',serif;font-size:1.4rem;color:var(--dark);margin-bottom:.7rem}
+.fsucc-d{font-size:.82rem;font-weight:300;color:var(--stone);line-height:1.85}
+.fsucc-d a{color:var(--gold);text-decoration:none}
+.ferr{display:none;background:rgba(200,40,40,.07);border:1px solid rgba(200,40,40,.2);color:#b33;font-size:.74rem;padding:.65rem 1rem;margin-bottom:.75rem;text-align:center}
+
+/* CTA BANNER */
+.cta-ban{padding:6rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;background:linear-gradient(135deg,#7A5C28 0%,#B48F52 55%,#C9A96E 100%);position:relative;overflow:hidden}
+.cta-ban::before{content:'ACP';position:absolute;right:-2rem;top:50%;transform:translateY(-50%);font-family:'Cinzel',serif;font-size:18rem;font-weight:700;color:rgba(255,255,255,.05);line-height:1;pointer-events:none}
+.ban-t{font-family:'Cinzel',serif;font-size:2.4rem;font-weight:600;line-height:1.1;color:#fff;position:relative}
+.ban-t em{font-style:italic;color:rgba(255,255,255,.75);font-family:'Raleway',sans-serif;font-weight:300;font-size:.82em;display:block}
+.ban-s{font-size:.8rem;font-weight:300;color:rgba(255,255,255,.6);margin-top:.9rem;line-height:1.7}
+.ban-bs{display:flex;flex-direction:column;gap:.9rem;position:relative}
+.bb{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.5rem;text-decoration:none;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;transition:all .25s;font-family:'Raleway',sans-serif;font-weight:600}
+.bb.wh{background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.bb.wh:hover{background:rgba(255,255,255,.25)}
+.bb.ou{border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.85);background:transparent}
+.bb.ou:hover{background:rgba(255,255,255,.1)}
+
+/* FOOTER */
+.ft{background:var(--dark);padding:5rem 3rem 2rem}
+.ft-g{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:3.5rem;padding-bottom:3.5rem;border-bottom:1px solid rgba(255,255,255,.07)}
+.ft-logo{height:48px;border-radius:8px;object-fit:contain;display:block;margin-bottom:1rem}
+.ft-ln{font-family:'Cinzel',serif;font-size:.9rem;font-weight:700;letter-spacing:.14em;color:var(--gold)}
+.ft-sl{font-size:.4rem;letter-spacing:.18em;font-style:italic;color:var(--stone);margin-top:.15rem;margin-bottom:.9rem}
+.ft-ab{font-size:.76rem;font-weight:300;line-height:1.82;color:rgba(255,255,255,.38);margin-bottom:1.2rem;max-width:270px}
+.ft-soc{display:flex;gap:.6rem;margin-top:.8rem}
+.ft-soc a{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:1px solid rgba(180,143,82,.3);color:var(--gold);text-decoration:none;transition:all .2s}
+.ft-soc a:hover{background:var(--gold);color:var(--white);border-color:var(--gold)}
+.ft-soc svg{width:14px;height:14px;fill:currentColor}
+.ft-col h4{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-d);margin-bottom:1.1rem}
+.ft-col ul{list-style:none}
+.ft-col ul li{margin-bottom:.55rem}
+.ft-col ul li,.ft-col ul a{font-size:.74rem;font-weight:300;color:rgba(255,255,255,.38);text-decoration:none;transition:color .2s}
+.ft-col ul a:hover{color:var(--gold)}
+.ft-bot{display:flex;justify-content:space-between;align-items:center;padding-top:2rem;font-size:.58rem;font-weight:300;color:rgba(255,255,255,.2)}
+
+/* ANIMATIONS */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.rv.in{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .anav{padding:.8rem 1.5rem}
+  .sec-top{grid-template-columns:1fr;gap:2rem}
+  .svc-g{grid-template-columns:1fr 1fr}
+  .diff-g{grid-template-columns:1fr}
+  .ts-g{grid-template-columns:1fr 1fr}
+  .rf-g{grid-template-columns:1fr 1fr}
+  .cov-g{grid-template-columns:1fr 1fr}
+  .cov-spec{grid-template-columns:1fr 1fr}
+  .form-s{grid-template-columns:1fr}
+  .cta-ban{grid-template-columns:1fr;gap:3rem}
+  .ft-g{grid-template-columns:1fr 1fr;gap:2.5rem}
+}
+@media(max-width:680px){
+  .lb-bar{padding:.4rem 1.2rem}
+  .anav{padding:.75rem 1.2rem}
+  .nav-links{display:none}
+  .nav-ctas .btn-o{display:none}
+  .sec{padding:4rem 1.5rem}
+  .stats-g{grid-template-columns:1fr 1fr}
+  .svc-g,.rf-g,.cov-g{grid-template-columns:1fr}
+  .ts-g{grid-template-columns:1fr}
+  .ft-g{grid-template-columns:1fr}
+  .fg2{grid-template-columns:1fr}
+  .form-l,.form-r{padding:4rem 1.5rem}
+  .cta-ban{padding:4rem 1.5rem}
+  .ft{padding:3.5rem 1.5rem 2rem}
+}
+</style>
+</head>
+<body>
+
+<!-- LANGUE -->
+<div class="lb-bar">
+  <button class="lb on" onclick="setLang('fr')" id="lb-fr">FR</button>
+  <span class="lsep">·</span>
+  <button class="lb" onclick="setLang('nl')" id="lb-nl">NL</button>
+  <span class="lsep">·</span>
+  <button class="lb" onclick="setLang('en')" id="lb-en">EN</button>
+</div>
+
+<!-- NAV -->
+<nav class="anav">
+  <a href="#" class="nav-logo">
+    <img src="logo.png" alt="Art Cover Project" width="46" height="46" fetchpriority="high"/>
+    <div>
+      <span class="logo-name">Art Cover Project</span>
+      <span class="logo-sl">The art of enhancing your spaces</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services" data-i="n_svc">Services</a></li>
+    <li><a href="#real" data-i="n_real">Réalisations</a></li>
+    <li><a href="#exp" data-i="n_exp">Expertise</a></li>
+    <li><a href="#contact" data-i="n_cont">Contact</a></li>
+  </ul>
+  <div class="nav-ctas">
+    <a href="#contact" class="btn-o" data-i="nav_sim">Simulation 24h</a>
+    <a href="#contact" class="btn-f" data-i="nav_pro">Devis offert 48h</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-in rv">
+    <div class="hero-ey" data-i="h_ey">Partenaire certifié Coverstyl</div>
+    <h1 class="hero-title">
+      <span data-i="h_t1">L'art de </span><span class="g" data-i="h_t2">sublimer</span><br>
+      <span data-i="h_t3">vos espaces</span>
+    </h1>
+    <p class="hero-sl" data-i="h_sl">The art of enhancing your spaces</p>
+    <p class="hero-desc" data-i="h_desc">Revêtements architecturaux premium pour murs, mobilier, portes, cuisines et toutes surfaces intérieures. 15 ans d'expertise, des chantiers de grande envergure maîtrisés de A à Z.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="hbtn gd" data-i="cta1">Simulation gratuite en 24h</a>
+      <a href="#contact" class="hbtn ou" data-i="cta2">Devis offert en 48h</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats" id="stats">
+  <div class="stats-g">
+    <div class="sc rv"><div class="sc-num"><span class="counter" data-target="500" data-suffix="+">500+</span></div><div class="sc-lb" data-i="st1">Références<br>de revêtement</div></div>
+    <div class="sc rv"><div class="sc-num"><span class="counter" data-target="15" data-suffix="+">15+</span><span class="sc-sx" data-i="st2s">ans</span></div><div class="sc-lb" data-i="st2">Expertise<br>grands projets</div></div>
+    <div class="sc rv"><div class="sc-num"><span class="counter" data-target="10">10</span><span class="sc-sx" data-i="st3s">ans</span></div><div class="sc-lb" data-i="st3">De<br>garantie</div></div>
+    <div class="sc rv"><div class="sc-num"><span class="counter" data-target="24">24</span><span class="sc-sx">h</span></div><div class="sc-lb" data-i="st4">Simulation<br>visuelle gratuite</div></div>
+    <div class="sc rv"><div class="sc-num"><span class="counter" data-target="48">48</span><span class="sc-sx">h</span></div><div class="sc-lb" data-i="st5">Devis<br>proforma offert</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="sec sw" id="services">
+  <div class="sec-top rv">
+    <div>
+      <p class="lbl" data-i="sv_l">Notre expertise</p>
+      <h2 class="h2"><span data-i="sv_t1">Toutes surfaces,</span><br><em data-i="sv_t2">un seul partenaire</em></h2>
+    </div>
+    <p class="lead" data-i="sv_d">D'un simple mur d'accent à un chantier commercial de grande envergure — Art Cover Project couvre chaque surface avec précision et maîtrise de A à Z.</p>
+  </div>
+  <div class="svc-g">
+
+    <!-- 01 Chantiers commerciaux — icône bâtiment/immeuble -->
+    <div class="svc-c rv">
+      <div class="svc-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="2" width="18" height="20" rx="0"/><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/><line x1="9" y1="2" x2="9" y2="22"/><line x1="15" y1="2" x2="15" y2="22"/>
+        </svg>
+      </div>
+      <div class="svc-n">01</div>
+      <div class="svc-nm" data-i="s1n">Chantiers commerciaux</div>
+      <p class="svc-d" data-i="s1d">Projets de grande envergure pour hôtels, bureaux, commerces. Gestion de projet complète, planning rigoureux, exécution impeccable.</p>
+      <div class="svc-bar"></div>
+    </div>
+
+    <!-- 02 Cuisines — icône plan de travail/cuisine -->
+    <div class="svc-c rv">
+      <div class="svc-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="5" rx="0"/><rect x="2" y="9" width="20" height="12" rx="0"/><line x1="7" y1="9" x2="7" y2="21"/><line x1="12" y1="9" x2="12" y2="21"/><line x1="17" y1="9" x2="17" y2="21"/><circle cx="5" cy="6.5" r=".8" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="svc-n">02</div>
+      <div class="svc-nm" data-i="s2n">Cuisines &amp; plans de travail</div>
+      <p class="svc-d" data-i="s2d">Films résistants à l'eau et à la chaleur pour façades de cuisine et plans de travail. Look rénovation complète sans les travaux.</p>
+      <div class="svc-bar"></div>
+    </div>
+
+    <!-- 03 Projets sur mesure — icône compas/équerre -->
+    <div class="svc-c rv">
+      <div class="svc-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 21l7-7"/><path d="M12.5 8.5L8 13l3 3 4.5-4.5"/><path d="M15 2l7 7-1.5 1.5L13.5 3.5 15 2z"/><line x1="10" y1="21" x2="10" y2="17"/><line x1="7" y1="21" x2="13" y2="21"/>
+        </svg>
+      </div>
+      <div class="svc-n">03</div>
+      <div class="svc-nm" data-i="s3n">Projets sur mesure</div>
+      <p class="svc-d" data-i="s3d">Solutions personnalisées avec architectes et designers — de la sélection des matériaux à la livraison clé en main.</p>
+      <div class="svc-bar"></div>
+    </div>
+
+    <!-- 04 Revêtements muraux — icône mur/carreau -->
+    <div class="svc-c rv">
+      <div class="svc-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="9" height="9" rx="0"/><rect x="13" y="2" width="9" height="9" rx="0"/><rect x="2" y="13" width="9" height="9" rx="0"/><rect x="13" y="13" width="9" height="9" rx="0"/>
+        </svg>
+      </div>
+      <div class="svc-n">04</div>
+      <div class="svc-nm" data-i="s4n">Revêtements muraux</div>
+      <p class="svc-d" data-i="s4d">Films architecturaux texturés pour tous les murs intérieurs. Hôtellerie, résidentiel, commercial, santé.</p>
+      <div class="svc-bar"></div>
+    </div>
+
+    <!-- 05 Rénovation mobilier — icône chaise/meuble -->
+    <div class="svc-c rv">
+      <div class="svc-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 9V5a1 1 0 011-1h12a1 1 0 011 1v4"/><path d="M3 11a2 2 0 012-2h14a2 2 0 012 2v3H3v-3z"/><line x1="6" y1="14" x2="6" y2="20"/><line x1="18" y1="14" x2="18" y2="20"/><line x1="4" y1="20" x2="20" y2="20"/>
+        </svg>
+      </div>
+      <div class="svc-n">05</div>
+      <div class="svc-nm" data-i="s5n">Rénovation de mobilier</div>
+      <p class="svc-d" data-i="s5d">Redonnez une touche premium à votre mobilier — durable, précis, bien plus économique que le remplacement.</p>
+      <div class="svc-bar"></div>
+    </div>
+
+    <!-- 06 Portes — icône porte -->
+    <div class="svc-c rv">
+      <div class="svc-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="2" width="16" height="20" rx="0"/><circle cx="15.5" cy="12" r="1" fill="currentColor"/><line x1="4" y1="22" x2="20" y2="22"/>
+        </svg>
+      </div>
+      <div class="svc-n">06</div>
+      <div class="svc-nm" data-i="s6n">Portes &amp; menuiserie</div>
+      <p class="svc-d" data-i="s6d">Portes intérieures et menuiseries rénovées avec films haute qualité ultra-réalistes — bois, métal, pierre ou couleurs unies.</p>
+      <div class="svc-bar"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RÉALISATIONS -->
+<section class="sec sl" id="real">
+  <div class="sec-top rv">
+    <div>
+      <p class="lbl" data-i="rf_l">Réalisations sélectionnées</p>
+      <h2 class="h2"><span data-i="rf_t1">Nos dernières</span><br><em data-i="rf_t2">réalisations</em></h2>
+    </div>
+    <p class="lead" data-i="rf_d">Sélection d'installations récentes — hôtellerie, commercial, cuisines. Belgique &amp; régions frontalières.</p>
+  </div>
+  <div class="rf-g">
+    <div class="rf-c rv"><div class="rf-th"><img class="rf-img" src="real1.png" alt="Chambre hôtel"/><div class="rf-ov"></div><div class="rf-ot">Revêtement mural · Chêne naturel</div></div><div class="rf-bd"><div class="rf-cat">Hôtellerie</div><div class="rf-nm">Chambre hôtel — Revêtement mural</div><div class="rf-mt">Chêne naturel structuré</div></div></div>
+    <div class="rf-c rv"><div class="rf-th"><img class="rf-img" src="real2.webp" alt="Couloir hôtel"/><div class="rf-ov"></div><div class="rf-ot">Portes · Finition bois premium</div></div><div class="rf-bd"><div class="rf-cat">Hôtellerie</div><div class="rf-nm">Couloir hôtel — Portes rénovées</div><div class="rf-mt">Film bois ultra-réaliste</div></div></div>
+    <div class="rf-c rv"><div class="rf-th"><img class="rf-img" src="real3.png" alt="Agencement commercial"/><div class="rf-ov"></div><div class="rf-ot">Mobilier &amp; agencement · Bois</div></div><div class="rf-bd"><div class="rf-cat">Commerce</div><div class="rf-nm">Agencement commercial — Mobilier</div><div class="rf-mt">Revêtement bois structuré</div></div></div>
+    <div class="rf-c rv"><div class="rf-th"><img class="rf-img" src="real4.webp" alt="Boulangerie comptoir"/><div class="rf-ov"></div><div class="rf-ot">Comptoir · Revêtement chêne</div></div><div class="rf-bd"><div class="rf-cat">Commerce</div><div class="rf-nm">Boulangerie — Comptoir rénové</div><div class="rf-mt">Film chêne naturel</div></div></div>
+    <div class="rf-c rv"><div class="rf-th"><img class="rf-img" src="real5.png" alt="Cuisine grise"/><div class="rf-ov"></div><div class="rf-ot">Cuisine · Façades rénovées</div></div><div class="rf-bd"><div class="rf-cat">Cuisine</div><div class="rf-nm">Cuisine — Façades et plan de travail</div><div class="rf-mt">Film gris mat premium</div></div></div>
+    <div class="rf-c rv"><div class="rf-th"><img class="rf-img" src="real6.jpg" alt="Cuisine marbre"/><div class="rf-ov"></div><div class="rf-ot">Plan de travail · Marbre Calacatta</div></div><div class="rf-bd"><div class="rf-cat">Cuisine</div><div class="rf-nm">Cuisine — Plan de travail marbre</div><div class="rf-mt">Marbre gris Calacatta</div></div></div>
+  </div>
+</section>
+
+<!-- MATÉRIAUX -->
+<section class="sec sw" id="mat">
+  <div class="sec-top rv">
+    <div>
+      <p class="lbl" data-i="cov_l">Collection premium</p>
+      <h2 class="h2"><span data-i="cov_t1">Nos gammes</span><br><em data-i="cov_t2">de matériaux</em></h2>
+    </div>
+    <p class="lead" data-i="cov_d">500+ références réparties en 9 gammes — films architecturaux haute qualité pour toutes les surfaces intérieures et extérieures.</p>
+  </div>
+  <div class="cov-g rv">
+    <div class="cov-c"><img class="cov-img" src="mat1.jpg" alt="Pierre" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Pierre</div><div class="cov-rf">Marbre · Travertin · Onyx · Ardoise</div></div></div>
+    <div class="cov-c"><img class="cov-img" src="mat2.jpg" alt="Exterior" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Exterior</div><div class="cov-rf">Usage extérieur certifié · Jusqu'à 20 ans</div></div></div>
+    <div class="cov-c"><img class="cov-img" src="mat3.jpg" alt="Couleur unie" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Couleur unie</div><div class="cov-rf">Mat · Satiné · Brillant · Soft Touch</div></div></div>
+    <div class="cov-c"><img class="cov-img" src="mat4.jpg" alt="Béton" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Béton</div><div class="cov-rf">Brut · Poli · Ciré · Structuré</div></div></div>
+    <div class="cov-c"><img class="cov-img" src="mat5.jpg" alt="Pailleté" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Pailleté</div><div class="cov-rf">Or · Argent · Cuivre · Nacre</div></div></div>
+    <div class="cov-c"><img class="cov-img" src="mat6.jpg" alt="Textile" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Textile</div><div class="cov-rf">Lin · Jute · Tissé · Velours</div></div></div>
+    <div class="cov-c"><img class="cov-img" src="mat7.jpg" alt="Métal" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Métal</div><div class="cov-rf">Acier brossé · Inox · Bronze · Cuivre</div></div></div>
+    <div class="cov-c"><img class="cov-img" src="mat8.jpg" alt="Couleur douce" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Couleur douce</div><div class="cov-rf">Sauge · Taupe · Blanc · Nude</div></div></div>
+    <div class="cov-c"><img class="cov-img" src="mat9.jpg" alt="Bois" width="400" height="300" loading="lazy"/><div class="cov-bd"><div class="cov-nm">Bois</div><div class="cov-rf">Chêne · Noyer · Wengé · Pin</div></div></div>
+  </div>
+  <div class="cov-spec rv">
+    <div class="cov-sp"><div class="cov-sp-t">PVC Free</div><div class="cov-sp-d">Polypropylène écologique<br>−30% d'émissions carbone</div></div>
+    <div class="cov-sp"><div class="cov-sp-t">Haute Résistance</div><div class="cov-sp-d">Abrasion supérieure<br>Zones à fort trafic</div></div>
+    <div class="cov-sp"><div class="cov-sp-t">Exterior</div><div class="cov-sp-d">Usage extérieur certifié<br>Durabilité jusqu'à 20 ans</div></div>
+    <div class="cov-sp"><div class="cov-sp-t">XL Line</div><div class="cov-sp-d">Laize 137cm<br>Grandes surfaces sans jonction</div></div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="sec sl" id="exp">
+  <div class="rv">
+    <p class="lbl" data-i="ex_l">Ce qui nous différencie</p>
+    <h2 class="h2"><span data-i="ex_t1">L'expertise qui fait</span><br><em data-i="ex_t2">la différence</em></h2>
+  </div>
+  <div class="diff-g">
+    <div class="diff-c rv">
+      <div class="diff-bg">15</div>
+      <div class="diff-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </div>
+      <div class="diff-t" data-i="d1t">15 ans de maîtrise technique</div>
+      <p class="diff-d" data-i="d1d">Nos poseurs chevronnés et gestionnaires de projets cumulent plus de 15 ans d'expérience. Chaque chantier maîtrisé de la préparation à la livraison — planification, suivi, contrôle qualité.</p>
+    </div>
+    <div class="diff-c rv">
+      <div class="diff-bg">GE</div>
+      <div class="diff-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/>
+        </svg>
+      </div>
+      <div class="diff-t" data-i="d2t">Spécialistes grands projets</div>
+      <p class="diff-d" data-i="d2d">Là où d'autres artisans s'arrêtent, nous avançons. Notre organisation est dimensionnée pour les chantiers complexes — hôtels, bureaux, complexes commerciaux.</p>
+    </div>
+    <div class="diff-c rv">
+      <div class="diff-bg">✓</div>
+      <div class="diff-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+        </svg>
+      </div>
+      <div class="diff-t" data-i="d3t">100% de clients satisfaits</div>
+      <p class="diff-d" data-i="d3d">Notre flexibilité et notre sens du service font de nous le partenaire de confiance. Nous nous adaptons à chaque contrainte et ne livrons que lorsque le résultat est à la hauteur.</p>
+    </div>
+    <div class="diff-c rv">
+      <div class="diff-bg">◆</div>
+      <div class="diff-ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <div class="diff-t" data-i="d4t">Certifié &amp; garant du résultat</div>
+      <p class="diff-d" data-i="d4d">Partenaire officiel certifié, nous travaillons avec les meilleures gammes du marché et garantissons chaque installation. Notre certification est votre assurance qualité.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section class="sec sw" id="avis">
+  <div class="rv" style="margin-bottom:3.5rem">
+    <p class="lbl" data-i="ts_l">Ce que disent nos clients</p>
+    <h2 class="h2"><span data-i="ts_t1">La confiance de centaines</span><br><em data-i="ts_t2">d'espaces sublimés</em></h2>
+  </div>
+  <div class="ts-g">
+    <!-- Thomas — architecte d'intérieur, homme professionnel -->
+    <div class="ts-c rv">
+      <div class="ts-stars"><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span></div>
+      <p class="ts-tx" data-i="t1">"La simulation envoyée en 24h était tellement précise que notre client a validé immédiatement. La pose était impeccable, dans les délais, sans la moindre mauvaise surprise. Un partenaire de confiance."</p>
+      <div class="ts-per">
+        <img class="ts-av" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=96&h=96&fit=crop&crop=faces&q=80" alt="Thomas V." width="48" height="48" loading="lazy"/>
+        <div>
+          <div class="ts-nm">Thomas V.</div>
+          <div class="ts-rl" data-i="t1r">Architecte d'intérieur — Bruxelles</div>
+          <div class="ts-badge">Professionnel</div>
+        </div>
+      </div>
+    </div>
+    <!-- Sarah — particulière, femme -->
+    <div class="ts-c rv">
+      <div class="ts-stars"><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span></div>
+      <p class="ts-tx" data-i="t2">"Notre cuisine est totalement transformée pour une fraction du coût d'une rénovation. Le rendu est indiscernable du vrai bois — même les artisans ne l'ont pas vu au premier coup d'œil !"</p>
+      <div class="ts-per">
+        <img class="ts-av" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=96&h=96&fit=crop&crop=faces&q=80" alt="Sarah M." width="48" height="48" loading="lazy"/>
+        <div>
+          <div class="ts-nm">Sarah M.</div>
+          <div class="ts-rl" data-i="t2r">Particulière — Liège</div>
+          <div class="ts-badge">Particulier</div>
+        </div>
+      </div>
+    </div>
+    <!-- Marc — directeur hôtelier, homme senior -->
+    <div class="ts-c rv">
+      <div class="ts-stars"><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span><span class="ts-star">★</span></div>
+      <p class="ts-tx" data-i="t3">"Art Cover Project a pris en charge notre hôtel de 80 chambres avec un professionnalisme exemplaire. Gestion irréprochable, équipes flexibles, résultat bien au-delà de nos attentes."</p>
+      <div class="ts-per">
+        <img class="ts-av" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=96&h=96&fit=crop&crop=faces&q=80" alt="Marc D." width="48" height="48" loading="lazy"/>
+        <div>
+          <div class="ts-nm">Marc D.</div>
+          <div class="ts-rl" data-i="t3r">Directeur — Groupe hôtelier</div>
+          <div class="ts-badge">Professionnel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="google-widget rv">
+    <p style="font-family:'Cinzel',serif;font-size:.95rem;color:var(--dark);margin-bottom:1.5rem" data-i="gw_t">Nos avis Google vérifiés</p>
+    <script defer async src='https://cdn.trustindex.io/loader.js?46bf58b664a67497e2761b9a000'></script>
+    <a href="https://share.google/gJaLl4UZ7sxnn4vxu" target="_blank" class="gw-link" data-i="gw_link">Voir tous nos avis sur Google →</a>
+  </div>
+</section>
+
+<!-- FORMULAIRE -->
+<section class="form-s" id="contact">
+  <!-- GAUCHE -->
+  <div class="form-l">
+    <div style="position:relative;z-index:2">
+      <div class="fl-badge"><div class="fl-dot"></div><span class="fl-t" data-i="pr_t">Simulation visuelle livrée en 24 heures</span></div>
+      <h2 class="fl-h2"><span data-i="fm_t1">Visualisez votre espace</span><br><em data-i="fm_t2">avant de le transformer.</em></h2>
+      <p class="fl-d" data-i="fm_d">Envoyez une photo de votre espace et décrivez votre projet. Simulation photoréaliste avant/après livrée sous 24h — gratuitement.</p>
+      <div class="fl-items">
+        <div class="fl-item">
+          <div class="fl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <div><div class="fl-item-t" data-i="of1t">Simulation visuelle gratuite</div><div class="fl-item-s" data-i="of1s">Rendu photoréaliste avant/après · 24h</div></div>
+        </div>
+        <div class="fl-item">
+          <div class="fl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div><div class="fl-item-t" data-i="of2t">Devis proforma offert</div><div class="fl-item-s" data-i="of2s">Estimation complète matériaux + pose · 48h</div></div>
+        </div>
+        <div class="fl-item">
+          <div class="fl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.05 12.05 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 6.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.05 12.05 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+          </div>
+          <div><div class="fl-item-t">+32 474 35 88 96</div><div class="fl-item-s"><a href="tel:+32474358896">Appel direct</a></div></div>
+        </div>
+        <div class="fl-item">
+          <div class="fl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div><div class="fl-item-t">info@art-cover-project.com</div><div class="fl-item-s"><a href="mailto:info@art-cover-project.com">Envoyer un email</a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DROITE — FORMULAIRE FORMSPREE -->
+  <div class="form-r">
+    <div id="mForm">
+      <form id="contactForm" action="https://formsubmit.co/info@art-cover-project.com" method="POST" enctype="multipart/form-data">
+      <!-- Config Formsubmit -->
+      <input type="hidden" name="_subject" value="Nouvelle demande — Art Cover Project"/>
+      <input type="hidden" name="_next" value="https://www.art-cover-project.com?merci=1"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_template" value="table"/>
+      <p class="fm-lbl" data-i="fm_l">Soumettez votre projet</p>
+      <div class="fg2">
+        <div class="fg"><label class="fl-label" data-i="f_fn">Prénom *</label><input class="fl-input" id="f-prenom" name="Prénom" type="text" placeholder="Marie"/></div>
+        <div class="fg"><label class="fl-label" data-i="f_ln">Nom *</label><input class="fl-input" id="f-nom" name="Nom" type="text" placeholder="Dupont"/></div>
+      </div>
+      <div class="fg"><label class="fl-label" data-i="f_em">Email *</label><input class="fl-input" id="f-email" name="Email" type="email" placeholder="marie@entreprise.be"/></div>
+      <div class="fg2">
+        <div class="fg"><label class="fl-label" data-i="f_ph">Téléphone</label><input class="fl-input" id="f-tel" name="Téléphone" type="tel" placeholder="+32 ..."/></div>
+        <div class="fg">
+          <label class="fl-label" data-i="f_cl">Vous êtes</label>
+          <select class="fl-input" id="f-client" name="Type de client">
+            <option value="">Sélectionner...</option>
+            <option value="Particulier">Particulier</option>
+            <option value="Entreprise">Entreprise / Professionnel</option>
+            <option value="Architecte">Architecte / Designer</option>
+            <option value="Hotelier">Hôtelier</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg2">
+        <div class="fg">
+          <label class="fl-label" data-i="f_ty">Type de projet</label>
+          <select class="fl-input" id="f-type" name="Type de projet">
+            <option value="">Sélectionner...</option>
+            <option value="Résidentiel">Résidentiel</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Hôtellerie">Hôtellerie</option>
+            <option value="Santé">Santé</option>
+            <option value="Retail">Retail</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label class="fl-label" data-i="f_su">Surface(s)</label>
+          <select class="fl-input" id="f-surface" name="Surface">
+            <option value="">Sélectionner...</option>
+            <option value="Murs">Murs</option>
+            <option value="Mobilier">Mobilier / Agencement</option>
+            <option value="Portes">Portes</option>
+            <option value="Cuisine">Façades de cuisine</option>
+            <option value="Plan de travail">Plans de travail</option>
+            <option value="Plusieurs">Plusieurs surfaces</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg">
+        <label class="fl-label" data-i="f_de">Décrivez votre vision</label>
+        <textarea class="fl-input" id="f-desc" name="Description" rows="3" placeholder="Matériaux, style, couleurs souhaités..." style="resize:vertical"></textarea>
+      </div>
+      <div class="fg">
+        <label class="fl-label" data-i="f_rq">Je souhaite</label>
+        <select class="fl-input" id="f-requete" name="Je souhaite">
+          <option value="Simulation visuelle (24h)">Simulation visuelle gratuite (24h)</option>
+          <option value="Devis proforma (48h)">Devis proforma (48h)</option>
+          <option value="Simulation + Devis">Les deux — simulation + devis</option>
+        </select>
+      </div>
+      <div class="fup-area" onclick="document.getElementById('f-fup').click()">
+        <svg class="fup-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+        </svg>
+        <div id="fup-label" data-i="f_up">Déposez vos photos ici — ou cliquez pour importer</div>
+        <div style="font-size:.54rem;color:var(--stone);margin-top:.25rem">JPG · PNG · PDF · Max 20MB</div>
+      </div>
+      <input type="file" id="f-fup" name="photo" multiple accept="image/*,.pdf" style="display:none" onchange="fileLabel()"/>
+      <div class="ferr" id="f-err">Veuillez remplir les champs obligatoires : prénom, nom et email.</div>
+      <button type="button" class="fsub" id="fsub-btn" onclick="envoyerFormulaire()">
+        <span id="fsub-txt" data-i="f_sb">Envoyer ma demande de projet</span>
+        <span>→</span>
+      </button>
+    </div>
+      </form>
+    <!-- end contactForm -->
+    <!-- MESSAGE SUCCÈS -->
+    <div class="fsucc" id="fsucc">
+      <div class="fsucc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <div class="fsucc-t" data-i="fs_t">Demande reçue !</div>
+      <div class="fsucc-d" data-i="fs_d">
+        Merci — nous vous contacterons sous 24 heures.<br><br>
+        <a href="mailto:info@art-cover-project.com">info@art-cover-project.com</a><br>
+        <a href="tel:+32474358896">+32 474 35 88 96</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-ban rv">
+  <div>
+    <h2 class="ban-t"><span data-i="bn_t1">Prêt à voir votre espace</span><em data-i="bn_t2">sublimé ?</em></h2>
+    <p class="ban-s" data-i="bn_s">Simulation gratuite 24h · Devis offert 48h · Sans engagement</p>
+  </div>
+  <div class="ban-bs">
+    <a href="#contact" class="bb wh"><span data-i="bn_b1">Simulation visuelle gratuite</span><span>24h →</span></a>
+    <a href="#contact" class="bb ou"><span data-i="bn_b2">Devis proforma offert</span><span>48h →</span></a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <div class="ft-g">
+    <div>
+      <img src="logo.png" alt="Art Cover Project" class="ft-logo" width="48" height="48" loading="lazy"/>
+      <div class="ft-ln">Art Cover Project</div>
+      <div class="ft-sl">The art of enhancing your spaces</div>
+      <p class="ft-ab" data-i="ft_ab">Revêtements architecturaux premium. Partenaire certifié. Liège — Belgique, Allemagne, Pays-Bas. 500+ références, 15 ans d'expertise.</p>
+      <div class="ft-soc">
+        <a href="https://www.instagram.com/artcover_project/" target="_blank" title="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/artcoverproject" target="_blank" title="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://linkedin.com/art-cover-project" target="_blank" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="ft-col">
+      <h4 data-i="fc1h">Services</h4>
+      <ul>
+        <li><a href="#services" data-i="fc1_1">Chantiers commerciaux</a></li>
+        <li><a href="#services" data-i="fc1_2">Cuisines &amp; plans de travail</a></li>
+        <li><a href="#services" data-i="fc1_3">Projets sur mesure</a></li>
+        <li><a href="#services" data-i="fc1_4">Revêtements muraux</a></li>
+        <li><a href="#services" data-i="fc1_5">Rénovation mobilier</a></li>
+        <li><a href="#services" data-i="fc1_6">Portes &amp; menuiserie</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4 data-i="fc2h">Entreprise</h4>
+      <ul>
+        <li><a href="#exp" data-i="fc2_1">Notre expertise</a></li>
+        <li><a href="#real" data-i="fc2_2">Réalisations</a></li>
+        <li><a href="#mat" data-i="fc2_3">Nos gammes</a></li>
+        <li><a href="#avis" data-i="fc2_4">Avis clients</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4 data-i="fc3h">Contact</h4>
+      <ul>
+        <li><a href="mailto:info@art-cover-project.com">info@art-cover-project.com</a></li>
+        <li><a href="tel:+32474358896">+32 474 35 88 96</a></li>
+        <li>Liège, Belgique</li>
+        <li style="margin-top:.8rem"><a href="#contact" data-i="fc3_1">Simulation gratuite →</a></li>
+        <li><a href="#contact" data-i="fc3_2">Devis proforma →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <span>© <span id="yr"></span> Art Cover Project · www.art-cover-project.com</span>
+    <span>Confidentialité · Cookies</span>
+  </div>
+</footer>
+
+<script>
+/* ================================================
+   TRADUCTIONS
+   ================================================ */
+var T={
+fr:{n_svc:"Services",n_real:"Réalisations",n_exp:"Expertise",n_cont:"Contact",nav_sim:"Simulation 24h",nav_pro:"Devis offert 48h",h_ey:"Partenaire certifié Coverstyl",h_t1:"L'art de ",h_t2:"sublimer",h_t3:"vos espaces",h_sl:"The art of enhancing your spaces",h_desc:"Revêtements architecturaux premium pour murs, mobilier, portes, cuisines. 15 ans d'expertise, chantiers de grande envergure maîtrisés de A à Z.",cta1:"Simulation gratuite en 24h",cta2:"Devis offert en 48h",st1:"Références\nde revêtement",st2:"Expertise\ngrands projets",st2s:"ans",st3:"De\ngarantie",st3s:"ans",st4:"Simulation\nvisuelle gratuite",st5:"Devis\nproforma offert",sv_l:"Notre expertise",sv_t1:"Toutes surfaces,",sv_t2:"un seul partenaire",sv_d:"D'un simple mur d'accent à un chantier commercial de grande envergure — Art Cover Project couvre chaque surface avec précision et maîtrise de A à Z.",s1n:"Chantiers commerciaux",s1d:"Projets de grande envergure pour hôtels, bureaux, commerces. Gestion de projet complète, planning rigoureux, exécution impeccable.",s2n:"Cuisines & plans de travail",s2d:"Films résistants à l'eau et à la chaleur pour façades de cuisine et plans de travail. Look rénovation complète sans les travaux.",s3n:"Projets sur mesure",s3d:"Solutions personnalisées avec architectes et designers — de la sélection des matériaux à la livraison clé en main.",s4n:"Revêtements muraux",s4d:"Films architecturaux texturés pour tous les murs intérieurs. Hôtellerie, résidentiel, commercial, santé.",s5n:"Rénovation de mobilier",s5d:"Redonnez une touche premium à votre mobilier — durable, précis, bien plus économique que le remplacement.",s6n:"Portes & menuiserie",s6d:"Portes intérieures et menuiseries rénovées avec films haute qualité ultra-réalistes — bois, métal, pierre ou couleurs unies.",rf_l:"Réalisations sélectionnées",rf_t1:"Nos dernières",rf_t2:"réalisations",rf_d:"Sélection d'installations récentes — hôtellerie, commercial, cuisines. Belgique & régions frontalières.",cov_l:"Collection premium",cov_t1:"Nos gammes",cov_t2:"de matériaux",cov_d:"500+ références en 9 gammes — films architecturaux haute qualité pour toutes les surfaces.",ex_l:"Ce qui nous différencie",ex_t1:"L'expertise qui fait",ex_t2:"la différence",d1t:"15 ans de maîtrise technique",d1d:"Nos poseurs chevronnés cumulent plus de 15 ans d'expérience. Chaque chantier maîtrisé de la préparation à la livraison.",d2t:"Spécialistes grands projets",d2d:"Là où d'autres artisans s'arrêtent, nous avançons. Dimensionnés pour les chantiers complexes — hôtels, bureaux, complexes commerciaux.",d3t:"100% de clients satisfaits",d3d:"Notre flexibilité et notre sens du service font de nous le partenaire de confiance. Nous ne livrons que lorsque le résultat est à la hauteur.",d4t:"Certifié & garant du résultat",d4d:"Partenaire officiel certifié, nous garantissons chaque installation avec les meilleures gammes du marché.",ts_l:"Ce que disent nos clients",ts_t1:"La confiance de centaines",ts_t2:"d'espaces sublimés",t1:'"La simulation en 24h était tellement précise que notre client a validé immédiatement. Pose impeccable, dans les délais, sans la moindre surprise."',t1r:"Architecte d'intérieur — Bruxelles",t2:'"Notre cuisine transformée pour une fraction du coût. Le rendu est indiscernable du vrai bois — même les artisans ne l\'ont pas vu !"',t2r:"Particulière — Liège",t3:'"Art Cover Project pour notre hôtel de 80 chambres. Gestion exemplaire, équipes flexibles, résultat bien au-delà de nos attentes."',t3r:"Directeur — Groupe hôtelier",gw_t:"Nos avis Google vérifiés",gw_link:"Voir tous nos avis sur Google →",pr_t:"Simulation visuelle livrée en 24 heures",fm_t1:"Visualisez votre espace",fm_t2:"avant de le transformer.",fm_d:"Envoyez une photo et décrivez votre projet. Simulation photoréaliste avant/après en 24h — gratuitement.",of1t:"Simulation visuelle gratuite",of1s:"Rendu photoréaliste avant/après · 24h",of2t:"Devis proforma offert",of2s:"Estimation complète matériaux + pose · 48h",fm_l:"Soumettez votre projet",f_fn:"Prénom *",f_ln:"Nom *",f_em:"Email *",f_ph:"Téléphone",f_cl:"Vous êtes",f_ty:"Type de projet",f_su:"Surface(s)",f_de:"Décrivez votre vision",f_up:"Déposez vos photos ici — ou cliquez pour importer",f_rq:"Je souhaite",f_sb:"Envoyer ma demande de projet",fs_t:"Demande reçue !",fs_d:"Merci — nous vous contacterons sous 24 heures.",bn_t1:"Prêt à voir votre espace",bn_t2:"sublimé ?",bn_s:"Simulation gratuite 24h · Devis offert 48h · Sans engagement",bn_b1:"Simulation visuelle gratuite",bn_b2:"Devis proforma offert",ft_ab:"Revêtements architecturaux premium. Partenaire certifié. Liège — Belgique.",fc1h:"Services",fc1_1:"Chantiers commerciaux",fc1_2:"Cuisines & plans de travail",fc1_3:"Projets sur mesure",fc1_4:"Revêtements muraux",fc1_5:"Rénovation mobilier",fc1_6:"Portes & menuiserie",fc2h:"Entreprise",fc2_1:"Notre expertise",fc2_2:"Réalisations",fc2_3:"Nos gammes",fc2_4:"Avis clients",fc3h:"Contact",fc3_1:"Simulation gratuite →",fc3_2:"Devis proforma →"},
+nl:{n_svc:"Diensten",n_real:"Realisaties",n_exp:"Expertise",n_cont:"Contact",nav_sim:"Simulatie 24u",nav_pro:"Offerte 48u",h_ey:"Gecertificeerd Coverstyl Partner",h_t1:"De kunst van het ",h_t2:"verfijnen",h_t3:"van uw ruimtes",h_sl:"The art of enhancing your spaces",h_desc:"Premium architecturale bekleding voor wanden, meubels, deuren en keukens. 15 jaar expertise, grootschalige projecten van A tot Z.",cta1:"Gratis simulatie in 24u",cta2:"Offerte in 48u",st1:"Referenties\nbekleding",st2:"Expertise\ngrote projecten",st2s:"jaar",st3:"Jaar\ngarantie",st3s:"jaar",st4:"Visuele\nsimulatie gratis",st5:"Proforma\nofferte",sv_l:"Onze expertise",sv_t1:"Alle oppervlakken,",sv_t2:"één partner",sv_d:"Van accentwand tot groot commercieel project — vakmanschap van A tot Z.",s1n:"Commerciële projecten",s1d:"Grootschalige projecten voor hotels, kantoren, retail. Volledig projectbeheer, strakke planning.",s2n:"Keukens & werkbladen",s2d:"Waterbestendige folies voor keukendeuren en werkbladen. Renovatielook zonder werken.",s3n:"Maatwerkprojecten",s3d:"Maatoplossingen met architecten en designers — van materiaalselectie tot sleutelklare oplevering.",s4n:"Wandbekleding",s4d:"Architecturale folies voor elke binnenwand. Horeca, residentieel, commercieel, zorg.",s5n:"Meubelrenovatie",s5d:"Transformeer bestaand meubilair — duurzaam, precies, kostenefficiënt.",s6n:"Deuren & schrijnwerk",s6d:"Binnendeuren en schrijnwerk gerenoveerd met ultrarealistische films — hout, metaal, steen.",rf_l:"Geselecteerde realisaties",rf_t1:"Onze recente",rf_t2:"realisaties",rf_d:"Installaties — horeca, commercieel, keukens. België & grensregio's.",cov_l:"Premium collectie",cov_t1:"Onze gammes",cov_t2:"materialen",cov_d:"500+ referenties in 9 gammes voor alle oppervlakken.",ex_l:"Wat ons onderscheidt",ex_t1:"De expertise die het",ex_t2:"verschil maakt",d1t:"15 jaar technische beheersing",d1d:"Ervaren installateurs van voorbereiding tot oplevering — planning, opvolging, kwaliteitscontrole.",d2t:"Specialisten grote projecten",d2d:"Gedimensioneerd voor complexe werven — hotels, kantoren, commerciële complexen.",d3t:"100% tevreden klanten",d3d:"Wij leveren pas op als het resultaat aan de hoogste standaard voldoet.",d4t:"Gecertificeerd & garant",d4d:"Officieel gecertificeerd partner. Wij garanderen elke installatie met de beste gammes.",ts_l:"Wat klanten zeggen",ts_t1:"Vertrouwd door honderden",ts_t2:"tevreden klanten",t1:'"De simulatie was zo nauwkeurig dat onze klant het meteen goedkeurde. Onberispelijke installatie, binnen de deadlines."',t1r:"Interieurarchitect — Brussel",t2:'"Onze keuken volledig getransformeerd voor een fractie van de prijs. Zelfs vaklieden zien het niet!"',t2r:"Particulier — Luik",t3:'"Art Cover Project voor ons hotel van 80 kamers. Voorbeeldig projectbeheer, ver boven onze verwachtingen."',t3r:"Directeur — Hotelgroep",gw_t:"Onze geverifieerde Google reviews",gw_link:"Bekijk alle reviews op Google →",pr_t:"Visuele simulatie binnen 24 uur",fm_t1:"Zie uw ruimte",fm_t2:"voor de transformatie.",fm_d:"Upload een foto en beschrijf uw project. Fotorealistische simulatie voor/na in 24u — gratis.",of1t:"Gratis visuele simulatie",of1s:"Fotorealistische voor/na · 24u",of2t:"Proformaofferte",of2s:"Volledige raming materialen + arbeid · 48u",fm_l:"Dien uw project in",f_fn:"Voornaam *",f_ln:"Achternaam *",f_em:"E-mail *",f_ph:"Telefoon",f_cl:"U bent",f_ty:"Projecttype",f_su:"Oppervlak",f_de:"Beschrijf uw visie",f_up:"Sleep foto's hier of klik om te uploaden",f_rq:"Ik vraag aan",f_sb:"Stuur mijn projectaanvraag",fs_t:"Aanvraag ontvangen!",fs_d:"We nemen binnen 24 uur contact met u op.",bn_t1:"Klaar om uw ruimte",bn_t2:"te laten stralen?",bn_s:"Gratis simulatie 24u · Offerte 48u · Geen verbintenis",bn_b1:"Gratis visuele simulatie",bn_b2:"Proformaofferte",ft_ab:"Premium architecturale bekleding. Gecertificeerd partner. Luik — België.",fc1h:"Diensten",fc1_1:"Commerciële projecten",fc1_2:"Keukens & werkbladen",fc1_3:"Maatwerkaprojecten",fc1_4:"Wandbekleding",fc1_5:"Meubelrenovatie",fc1_6:"Deuren & schrijnwerk",fc2h:"Bedrijf",fc2_1:"Onze expertise",fc2_2:"Realisaties",fc2_3:"Onze gammes",fc2_4:"Klantreviews",fc3h:"Contact",fc3_1:"Gratis simulatie →",fc3_2:"Proformaofferte →"},
+en:{n_svc:"Services",n_real:"Projects",n_exp:"Expertise",n_cont:"Contact",nav_sim:"Free Simulation 24h",nav_pro:"Quote offered 48h",h_ey:"Certified Coverstyl Partner",h_t1:"The art of ",h_t2:"enhancing",h_t3:"your spaces",h_sl:"The art of enhancing your spaces",h_desc:"Premium architectural coverings for walls, furniture, doors, kitchens. 15 years of expertise, large-scale projects from A to Z.",cta1:"Free simulation in 24h",cta2:"Quote offered in 48h",st1:"Covering\nreferences",st2:"Expertise\nlarge projects",st2s:"yrs",st3:"Year\nwarranty",st3s:"yrs",st4:"Free visual\nsimulation",st5:"Pro forma\nquote",sv_l:"Our expertise",sv_t1:"All surfaces,",sv_t2:"one partner",sv_d:"From a single accent wall to a large commercial project — precision and mastery from A to Z.",s1n:"Commercial projects",s1d:"Large-scale projects for hotels, offices, retail. Full project management, rigorous planning.",s2n:"Kitchens & worktops",s2d:"Water and heat-resistant films for kitchen fronts and worktops. Full renovation look without the mess.",s3n:"Bespoke projects",s3d:"Custom solutions with architects and designers — from material selection to turnkey delivery.",s4n:"Wall coverings",s4d:"Architectural films for every interior wall. Hospitality, residential, commercial, healthcare.",s5n:"Furniture renovation",s5d:"Give your furniture a premium upgrade — durable, precise, far more economical than replacement.",s6n:"Doors & joinery",s6d:"Interior doors and joinery renewed with ultra-realistic premium films — wood, metal, stone or solid colour.",rf_l:"Selected work",rf_t1:"Our latest",rf_t2:"realizations",rf_d:"Recent installations — hospitality, commercial, kitchens. Belgium & border regions.",cov_l:"Premium collection",cov_t1:"Our material",cov_t2:"ranges",cov_d:"500+ references in 9 ranges — premium architectural films for all surfaces.",ex_l:"What sets us apart",ex_t1:"The expertise that makes",ex_t2:"the difference",d1t:"15 years of technical mastery",d1d:"Seasoned installers with 15+ years of experience. Every project mastered from preparation to delivery.",d2t:"Large project specialists",d2d:"Where others stop, we push forward. Built for complex projects — hotels, headquarters, commercial complexes.",d3t:"100% satisfied clients",d3d:"We only hand over when the result meets the highest standard. Your satisfaction is our commitment.",d4t:"Certified & quality guaranteed",d4d:"Official certified partner. We guarantee every installation with the best ranges on the market.",ts_l:"What clients say",ts_t1:"Trusted by hundreds",ts_t2:"of happy spaces",t1:'"The 24h simulation was so accurate our client approved on the spot. Impeccable installation, on time, no surprises."',t1r:"Interior Architect — Brussels",t2:'"Our kitchen transformed for a fraction of the cost. Even craftsmen couldn\'t tell the difference!"',t2r:"Homeowner — Liège",t3:'"Art Cover Project for our 80-room hotel. Exemplary management, flexible teams, results beyond all expectations."',t3r:"Director — Hotel Group",gw_t:"Our verified Google reviews",gw_link:"View all our reviews on Google →",pr_t:"Visual simulation within 24 hours",fm_t1:"See your space",fm_t2:"before it changes.",fm_d:"Upload a photo and describe your project. Photorealistic before/after simulation in 24h — free.",of1t:"Free visual simulation",of1s:"Photorealistic before/after · 24h",of2t:"Pro forma quote",of2s:"Full estimate materials + labour · 48h",fm_l:"Submit your project",f_fn:"First name *",f_ln:"Last name *",f_em:"Email *",f_ph:"Phone",f_cl:"You are",f_ty:"Project type",f_su:"Surface(s)",f_de:"Describe your vision",f_up:"Drop photos here or click to upload",f_rq:"I am requesting",f_sb:"Send my project request",fs_t:"Request received!",fs_d:"Thank you — we'll be in touch within 24 hours.",bn_t1:"Ready to see your space",bn_t2:"transformed?",bn_s:"Free simulation 24h · Quote 48h · No commitment",bn_b1:"Free visual simulation",bn_b2:"Pro forma quote",ft_ab:"Premium architectural coverings. Certified partner. Liège — Belgium.",fc1h:"Services",fc1_1:"Commercial projects",fc1_2:"Kitchens & worktops",fc1_3:"Bespoke projects",fc1_4:"Wall coverings",fc1_5:"Furniture renovation",fc1_6:"Doors & joinery",fc2h:"Company",fc2_1:"Our expertise",fc2_2:"Realizations",fc2_3:"Our ranges",fc2_4:"Client reviews",fc3h:"Contact",fc3_1:"Free simulation →",fc3_2:"Pro forma quote →"}
+};
+
+function setLang(l){
+  ['fr','nl','en'].forEach(function(x){document.getElementById('lb-'+x).classList.toggle('on',x===l);});
+  document.querySelectorAll('[data-i]').forEach(function(el){
+    var k=el.getAttribute('data-i');
+    if(T[l]&&T[l][k]!==undefined) el.textContent=T[l][k];
+  });
+}
+
+/* ================================================
+   UPLOAD LABEL
+   ================================================ */
+function fileLabel(){
+  var f=document.getElementById('f-fup').files;
+  if(f&&f.length>0) document.getElementById('fup-label').textContent=f.length+' fichier(s) sélectionné(s)';
+}
+
+/* ================================================
+   FORMSPREE — ENVOI AJAX
+   ================================================ */
+function envoyerFormulaire(){
+  var prenom = document.getElementById('f-prenom').value.trim();
+  var nom    = document.getElementById('f-nom').value.trim();
+  var email  = document.getElementById('f-email').value.trim();
+  var err    = document.getElementById('f-err');
+
+  if(!prenom || !nom || !email){
+    err.textContent = 'Veuillez remplir les champs obligatoires : prénom, nom et email.';
+    err.style.display = 'block';
+    return;
+  }
+  err.style.display = 'none';
+
+  var btn = document.getElementById('fsub-btn');
+  var txt = document.getElementById('fsub-txt');
+  btn.disabled = true;
+  txt.textContent = 'Envoi en cours...';
+
+  document.getElementById('contactForm').submit();
+}
+/* ================================================
+   PAGE DE CONFIRMATION (retour depuis Formsubmit)
+   ================================================ */
+if(window.location.search.indexOf('merci=1') > -1){
+  var mf = document.getElementById('mForm');
+  var fs = document.getElementById('fsucc');
+  if(mf) mf.style.display='none';
+  if(fs) fs.style.display='block';
+  history.replaceState(null,'',window.location.pathname);
+}
+
+/* ================================================
+   COMPTEURS ANIMÉS
+   ================================================ */
+var counterDone = false;
+var counterObs = new IntersectionObserver(function(entries){
+  if(entries[0].isIntersecting && !counterDone){
+    counterDone = true;
+    document.querySelectorAll('.counter').forEach(function(el){
+      var target = parseInt(el.dataset.target);
+      var suffix = el.dataset.suffix || '';
+      var steps  = 60, dur = 1800, cur = 0, inc = target/steps;
+      var t = setInterval(function(){
+        cur += inc;
+        if(cur >= target){ cur = target; clearInterval(t); }
+        el.textContent = Math.floor(cur) + suffix;
+      }, dur/steps);
+    });
+  }
+}, {threshold:0.3});
+var statsEl = document.getElementById('stats');
+if(statsEl) counterObs.observe(statsEl);
+
+/* ================================================
+   SCROLL REVEAL
+   ================================================ */
+var revealObs = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry, i){
+    if(entry.isIntersecting){
+      setTimeout(function(){ entry.target.classList.add('in'); }, i * 60);
+    }
+  });
+}, {threshold: 0.07});
+document.querySelectorAll('.rv').forEach(function(el){ revealObs.observe(el); });
+</script>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
