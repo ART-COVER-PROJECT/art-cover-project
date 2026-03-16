@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://www.art-cover-project.com/sitemap.xml
+Sitemap: https://art-cover-project.com/sitemap.xml
