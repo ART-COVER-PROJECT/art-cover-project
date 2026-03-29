@@ -1,3 +1,16 @@
 User-agent: *
 Allow: /
 Sitemap: https://www.art-cover-project.com/sitemap.xml
+
+# Allow AI search crawlers (visibility ChatGPT, Perplexity, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
