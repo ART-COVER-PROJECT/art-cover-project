@@ -191,3 +191,9 @@ body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--dark);
   .art-body{padding:3rem 1.5rem 4rem}
   .art-header{padding:3.5rem 1.5rem 3rem}
 }
+
+/* SOCIAL ICONS FOOTER */
+.ft-soc{display:flex;gap:.6rem;margin-top:.8rem;flex-wrap:wrap}
+.ft-soc a{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:1px solid rgba(180,143,82,.3);color:var(--gold);text-decoration:none;transition:all .2s}
+.ft-soc a:hover{background:var(--gold);color:var(--white);border-color:var(--gold)}
+.ft-soc svg{width:14px;height:14px;fill:currentColor}

@@ -4,10 +4,10 @@
 **Langue:** Français · **Pays:** Grand-Duché de Luxembourg
 
 ## Description
-Art Cover Project, partenaire officiellement certifié Coverstyl®, intervient dans tout le Grand-Duché de Luxembourg. Revêtements architecturaux pour cuisines, mobilier, portes, hôtels — sans démolition, sans poussière, résultat en une journée.
+Art Cover Project, partenaire officiellement certifié Coverstyl®, intervient dans tout le Grand-Duché de Luxembourg. Revêtements architecturaux pour cuisines, mobilier, portes, hôtels — sans démolition, sans poussière, résultat en moins d'une semaine.
 
 ## Avantages clés
-- 50–80% moins cher qu'une rénovation traditionnelle · 10 ans de garantie · Pose en 1 journée
+- 50–80% moins cher qu'une rénovation traditionnelle · 10 ans de garantie · Pose en moins d'une semainenée
 - TVA 3% applicable sur rénovation résidentielle au Luxembourg
 - 500+ références Coverstyl® · Certification A+ COV
 

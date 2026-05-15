@@ -6,12 +6,12 @@
 
 ## Description
 
-Art Cover Project est le partenaire officiellement certifié Coverstyl® intervenant à Verviers et dans toute la région verviétoise. Nous posons des films architecturaux sur cuisines, mobilier, portes, murs et plans de travail — sans démolition, sans poussière, résultat en une journée.
+Art Cover Project est le partenaire officiellement certifié Coverstyl® intervenant à Verviers et dans toute la région verviétoise. Nous posons des films architecturaux sur cuisines, mobilier, portes, murs et plans de travail — sans démolition, sans poussière, résultat en moins d'une semaine.
 
 ## Avantages clés
 
 - Rénovation sans démolition ni poussière
-- Résultat en une journée
+- Résultat en moins d'une semaine
 - 500+ références Coverstyl® (bois, pierre, béton, métal, textile)
 - Garantie fabricant 10 ans
 - Certification A+ émissions de COV
